@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- <header>
+        <div class="contact-info">
+            <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+            <p>info@example.com</p>
+            <p>+91-213-666-0027</p>
+            <p>Login</p>
+            <div>
+                <i class="fa-brands fa-facebook-f" style="color: aliceblue;padding: 10px;"></i>
+                <i class="fa-brands fa-twitter" style="color: aliceblue;padding: 10px;"></i>
+                <i class="fa-brands fa-linkedin" style="color: aliceblue;padding: 10px;"></i>
+            </div>
+
+        </div>
+        <div style="display: flex;justify-content: space-evenly;align-items: center;">
+            <div style="display: flex;justify-content: space-evenly;">
+                <img src="roof.png" alt="" style="width: 100px;height: auto;">
+                <div style="color: black;display: flex;flex-direction: column;justify-content: center;">
+                    <h2 style="padding: 0%;margin: 0%;">Roofer</h2>
+                    <p style="padding: 0%;margin: 0%;">Roof services</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button style="background-color: red;">Free Estimate</button>
+        </div>
+
+    </header> -->
+    <header>
+        <div class="contact-info" style="flex-wrap: wrap;">
+            <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+            <p>info@example.com</p>
+            <p>+91-213-666-0027</p>
+
+            <div style="display: flex;gap: 20px;align-items: center;">
+                <p>Login</p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="nav-container" style="flex-wrap: wrap;">
+            <div class="logo-container">
+                <img src="roof.png" alt="Roofer Logo" class="logo">
+                <div class="logo-text">
+                    <h2>Roofer</h2>
+                    <p>Roof services</p>
+                </div>
+            </div>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="estimate-btn">Free Estimate</button>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <div class="side-menu" id="side-menu">
+        <div class="side-menu-header">
+            <div class="logo-container">
+                <img src="roof.png" alt="Roofer Logo" class="logo">
+                <div class="logo-text">
+                    <h2>Roofer</h2>
+                    <p>Roof services</p>
+                </div>
+            </div>
+            <div class="close-menu" id="close-menu">&times;</div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="#" style="text-decoration: none;color: aliceblue;">Home</a> <br><br>
+            <a href="#" style="text-decoration: none;color: aliceblue;">About Us</a> <br><br>
+            <a href="#" style="text-decoration: none;color: aliceblue;">Services</a> <br><br>
+            <a href="#" style="text-decoration: none;color: aliceblue;">Pages</a> <br><br>
+            <a href="#" style="text-decoration: none;color: aliceblue;">News</a> <br><br>
+            <a href="#" style="text-decoration: none;color: aliceblue;">Contact</a> <br><br>
+        </div>
+        <div class="side-contact-info">
+            <p style="margin: 0%;padding: 0%;">Chicago 12, Melbourne City, USA</p>
+            <p style="margin: 0%;padding: 0%;">+88 01682648101</p>
+            <p style="margin: 0%;padding: 0%;">info@example.com</p>
+        </div>
+    </div>
+    <main>
+        <!-- <section>
+            <div class="container">
+                <img src="roofer.png" alt="Background Image" class="background-image">
+                <div class="overlay" style="height: 100vh;">
+                    <div class="content">
+                        <h1>BEST ROOFING SERVICE & CONSULTING</h1>
+                        <p style="word-wrap: break-word;">Lorem ipsum dolor sit amet, consectetur adipiscing elit Turpis
+                            ridiculus tellus.hdfhfhf</p>
+                        <button>MAKE APPOINTMENT</button>
+                    </div>
+                </div>
+                <div style="height: 400px;"></div>
+                <div class="form-overlay" style="text-align: center;">
+                    <h1>REQUEST FOR A SERVICE</h1>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <input type="text" name="phone" placeholder="Phone Number" required>
+                        <button type="submit">SUBMIT NOW</button>
+                    </form>
+                </div>
+            </div>
+        </section> -->
+        <section>
+
+            <div id="container">
+                <img src="roofer.png" alt="Background Image" class="background-image">
+
+                <div class="overlay">
+                    <img src="https://roofer-kappa.vercel.app/assets/images/shape/shape-07.png" alt="image"
+                        class="overlay" id="redhouse">
+                    <div class="content">
+                        <h1>BEST ROOFING SERVICE & CONSULTING</h1>
+                        <p style="word-wrap: break-word;">Lorem ipsum dolor sit amet, consectetur adipiscing elit Turpis
+                            ridiculus tellus.hdfhfhf</p>
+                        <button class="btn btn-primary bg-light text-dark">MAKE APPOINTMENT</button>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div style="display: flex;justify-content: center;">
+                    <div style="text-align: center;" class="form-overlays">
+
+                        <h1>REQUEST FOR A SERVICE</h1>
+                        <form action="#" method="POST">
+                            <input type="text" name="name" placeholder="Name" required>
+                            <input type="text" name="email" placeholder="Your Email" required>
+                            <input type="text" name="phone" placeholder="Phone Number" required>
+                            <button type="submit">SUBMIT NOW</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <br>
+        <section class="services-section" style="flex-wrap: wrap;">
+            <div class="service-item" style="width: 25em;">
+                <div><i class="fa-solid fa-user" style="color: #11053b;font-size: xx-large;"></i></div>
+                <h3>Expert Engineer</h3>
+                <p>Suspndisse varius etiam est vitae dui tempus nec vitae orci sodales metus velit nec at diam in sed.
+                </p>
+            </div>
+            <div class="service-item" style="width: 25em;">
+                <div><i class="fa-regular fa-pen-ruler" style="color: #11053b;font-size: xx-large;"></i></div>
+                <h3>Quality Materials</h3>
+                <p>Suspndisse varius etiam est vitae dui tempus nec vitae orci sodales metus velit nec at diam in sed.
+                </p>
+            </div>
+            <div class="service-item" style="width: 25em;">
+                <div><i class="fa-regular fa-file-signature" style="color: #11053b;font-size: xx-large;"></i></div>
+                <h3>Free Estimates</h3>
+                <p>Suspndisse varius etiam est vitae dui tempus nec vitae orci sodales metus velit nec at diam in sed.
+                </p>
+            </div>
+        </section>
+
+        <section id="experts" style="display: flex;align-items: center;justify-content: center;padding: 10px;">
+            <div style="width: 50%;display: flex;gap: 20px;justify-content: center;padding: 10px;" class="expert">
+                <div>
+                    <img src="roof (1).png" alt="Worker Image" style="height: 500px;width:300px;">
+                </div>
+                <div style="display: flex;flex-direction: column;gap: 20px;">
+                    <img src="roof (2).png" alt="Worker Image" style="height: 200px;width:300px;">
+                    <img src="roof (3).png" alt="Worker Image" style="height: 280px;width:300px;">
+                </div>
+            </div>
+            <div style="text-align: center;padding: 30px;">
+                <h3 style="color: red;">ABOUT ROOFTOX</h3>
+                <h1>Experienced & Quality More Than 30 Years</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing integer ultrices suspendisse
+                    varius etiam est. Est, felis, tempus nec vitae orci sodales Metus, velit nec at diam in sed. Massa
+                    dui ipsum ornare sagittis dolor sagittis amet odio est. Sit semper et velit fusce.</p>
+                <div style="display: flex;justify-content: center;">
+                    <div>
+                        <div><i class="fa-regular fa-pen-ruler" style="color: #11053b;font-size: xx-large;"></i></div>
+                        <h4>Quality Materials</h4>
+                        <p>Amet minim mollit deserunt ullamco sit enim.</p>
+                    </div>
+                    <div>
+                        <div><i class="fa-solid fa-user" style="color: #11053b;font-size: xx-large;"></i></div>
+                        <h4>Expert Engineer</h4>
+                        <p>Amet minim mollit deserunt ullamco sit enim.</p>
+                    </div>
+                </div>
+                <button style="background-color: red; color: white;">READ MORE</button>
+            </div>
+        </section><br><br>
+        <section style="text-align: center; margin: 0; padding: 0;">
+            <div class="container" style="background-color: #1b1a1a; padding-top: 40px;">
+                <p style="font-weight: bold; color: red;">OUR SERVICES</p>
+                <h1 style="color: aliceblue;">We’re Providing Quality<br> Roofing Services</h1>
+                <br>
+                <div style="display: flex; justify-content: center;">
+                    <div style="border: #666 solid thin; padding: 10px;" id="color"
+                        onclick="showContent('roofing-layer')">
+                        <a style="text-decoration: none; color: aliceblue; font-size: medium;">Roofing
+                            Layer</a>
+                    </div>
+                    <div style="border: #666 solid thin; padding: 10px;" id="color"
+                        onclick="showContent('damage-repair')">
+                        <a style="text-decoration: none; color: aliceblue; font-size: medium;">Damage
+                            Repair</a>
+                    </div>
+                    <div style="border: #666 solid thin; padding: 10px;" id="color"
+                        onclick="showContent('roof-cornering')">
+                        <a style="text-decoration: none; color: aliceblue; font-size: medium;">Roof
+                            Cornering</a>
+                    </div>
+                    <div style="border: #666 solid thin; padding: 10px;" id="color"
+                        onclick="showContent('siding-install')">
+                        <a style="text-decoration: none; color: aliceblue; font-size: medium;">Siding
+                            Install</a>
+                    </div>
+                </div>
+
+                <br><br>
+                <div id="roof-cornering" class="tab-content">
+                    <div style="display: flex; justify-content: space-evenly; color: aliceblue; padding-bottom: 150px;padding-left: 20px;padding-right: 20px;gap: 20px;"
+                        class="expert">
+                        <div>
+                            <img src="slide (3).png" alt="image" style="max-width: 100%;height: auto;">
+                        </div>
+                        <div style="font-size: medium;max-width: 50%;" id="res">
+                            <h2 style="font-size: 2.1em;">Roof Cornering</h2>
+                            <p style="font-weight: 400; color: antiquewhite;">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Adipiscing integer ultrices suspendisse varius etiam est. Est, felis, tempus nec vitae
+                                orci
+                                sodales
+                                Metus, velit nec at diam in sed. Massa dui ipsum ornare sagittis dolor sagittis amet
+                                odio
+                                est. Sit
+                                semper et velit fusce.</p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> Innovative Work Experience
+                            </p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> 100% Satisfaction
+                                Guarantee
+                            </p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> Quality Expert Engineer
+                            </p>
+                            <button style="background-color: red; color: aliceblue;">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="roofing-layer" class="tab-content">
+                    <div style="display: flex; justify-content: space-evenly; color: aliceblue; padding-bottom: 150px;padding-left: 20px;padding-right: 20px;gap: 20px;"
+                        class="expert">
+                        <div>
+                            <img src="slide (2).png" alt="image" style="max-width: 100%;height: auto;">
+                        </div>
+                        <div style="font-size: medium;max-width: 50%;" id="res">
+                            <h2 style="font-size: 2.1em;">Roofing Layer</h2>
+                            <p style="font-weight: 400; color: antiquewhite;">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit.
+                                Adipiscing integer ultrices suspendisse varius etiam est. Est, felis, tempus nec
+                                vitae orci
+                                sodales
+                                Metus, velit nec at diam in sed. Massa dui ipsum ornare sagittis dolor sagittis amet
+                                odio
+                                est. Sit
+                                semper et velit fusce.</p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> Innovative Work
+                                Experience</p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> 100% Satisfaction
+                                Guarantee
+                            </p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> Quality Expert
+                                Engineer</p>
+                            <button style="background-color: red; color: aliceblue;">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="damage-repair" class="tab-content active">
+                    <div style="display: flex; justify-content: space-evenly; color: aliceblue; padding-bottom: 150px;padding-left: 20px;padding-right: 20px;gap: 20px;"
+                        class="expert">
+                        <div>
+                            <img src="slide (1).png" alt="image" style="max-width: 100%;height: auto;">
+                        </div>
+                        <div style="font-size: medium;max-width: 50%;" id="res">
+                            <h2 style="font-size: 2.1em;">Damage Repair</h2>
+                            <p style="font-weight: 400; color: antiquewhite;">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit.
+                                Adipiscing integer ultrices suspendisse varius etiam est. Est, felis, tempus nec
+                                vitae orci
+                                sodales
+                                Metus, velit nec at diam in sed. Massa dui ipsum ornare sagittis dolor sagittis amet
+                                odio
+                                est. Sit
+                                semper et velit fusce.</p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> Innovative Work
+                                Experience</p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> 100% Satisfaction
+                                Guarantee
+                            </p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> Quality Expert
+                                Engineer</p>
+                            <button style="background-color: red; color: aliceblue;">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="siding-install" class="tab-content">
+                    <div style="display: flex; justify-content: space-evenly; color: aliceblue; padding-bottom: 150px;padding-left: 20px;padding-right: 20px;gap: 20px;"
+                        class="expert">
+                        <div>
+                            <img src="WORK.png" alt="image" style="max-width: 100%;height: auto;">
+                        </div>
+                        <div style="font-size: medium;max-width: 50%;" id="res">
+                            <h2 style="font-size: 2.1em;">Siding Install</h2>
+                            <p style="font-weight: 400; color: antiquewhite;">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit.
+                                Adipiscing integer ultrices suspendisse varius etiam est. Est, felis, tempus nec
+                                vitae orci
+                                sodales
+                                Metus, velit nec at diam in sed. Massa dui ipsum ornare sagittis dolor sagittis amet
+                                odio
+                                est. Sit
+                                semper et velit fusce.</p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> Innovative Work
+                                Experience</p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> 100% Satisfaction
+                                Guarantee
+                            </p>
+                            <p><i class="fa-regular fa-circle-check" style="color: red;"></i> Quality Expert
+                                Engineer</p>
+                            <button style="background-color: red; color: aliceblue;">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="height: 550px; background-color: rgb(226, 206, 206); display: flex;justify-content: space-between;">
+                    <img src='sticker (1).png' class='img-fluid' style="width:50%;height:500px" />
+                    <img src='sticker (2).png' class='img-fluid' style="width:50%;height:400px" />
+                </div>
+                <!-- <div style="height: 100px; background-color: rgb(226, 206, 206); margin: 0;"></div> -->
+                <div class="form-overlay" id="experts"
+                    style="text-align: center; margin: 0; background-color: transparent;box-shadow: none;width: 95vw;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;">
+                    <div
+                        style="padding-top: 20px;padding-bottom: 20px;background-color: red;width: 20em;display: flex;justify-content: center;align-items: center;gap: 20px;">
+                        <div>
+                            <i class="fa-solid fa-house" style="color: aliceblue;font-size: 3em;"></i>
+                        </div>
+                        <div style="color: aliceblue;margin: 0;padding: 0;">
+                            <h1 style="font-size: 3.1em;padding: 0;margin: 0;">932+</h1>
+                            <p style="font-weight: bold;padding: 0;margin: 0;">Project Complete</p>
+                        </div>
+
+                    </div>
+                    <div
+                        style="padding-top: 20px;padding-bottom: 20px;background-color: aliceblue;width: 20em;display: flex;justify-content: center;align-items: center;gap: 20px;">
+                        <div>
+                            <img src="support.png" alt="image" style="height: 80px;">
+                        </div>
+                        <div style="margin: 0;padding: 0;">
+                            <h1 style="font-size: 3.1em;padding: 0;margin: 0;">90+</h1>
+                            <p style="font-weight: bold;padding: 0;margin: 0;">Experience Staff</p>
+                        </div>
+
+                    </div>
+                    <div
+                        style="padding-top: 20px;padding-bottom: 20px;background-color: red;width: 20em;display: flex;justify-content: center;align-items: center;gap: 20px;">
+                        <div>
+                            <img src="life-insurance.png" alt="life" style="height: 80px;">
+                        </div>
+                        <div style="color: aliceblue; margin: 0;padding: 0;">
+                            <h1 style="font-size: 3.1em;padding: 0;margin: 0;">20+</h1>
+                            <p style="font-weight: bold;padding: 0;margin: 0;">Awards Win</p>
+                        </div>
+
+                    </div>
+                    <div
+                        style="background-color: aliceblue;width: 20em;display: flex;justify-content: center;align-items: center;gap: 20px;padding-top: 20px;padding-bottom: 20px;">
+                        <div>
+                            <i class="fa-solid fa-user" style="font-size: 3em;"></i>
+                        </div>
+                        <div style="margin: 0;padding: 0;">
+                            <h1 style="font-size: 3.1em;padding: 0;margin: 0;">620+</h1>
+                            <p style="font-weight: bold;padding: 0;margin: 0;">Satisfied Clients</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            style="display: flex; justify-content: space-evenly; align-items: center; background-color: rgb(226, 206, 206); margin: 0; padding: 0;"
+            class="expert">
+            <div style="padding: 20px;width: 60em;">
+                <p style="color: red; font-weight: bold;">WHY CHOOSE ROOFTOX</p>
+                <h1>Why Choose RoofTox For Roofing Service.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing integer suspendisse varius etiam
+                    est tempus nec vitae orci sodales.</p>
+                <div style="display: flex; justify-content: center; gap: 20px;">
+                    <div style="display: flex; justify-content: center; gap: 20px; align-items: center;" class="expert">
+                        <div
+                            style="background-color: aliceblue; width: 6em; height: 6em; display: flex; align-items: center; justify-content: center; border-radius: 20px;">
+                            <i class="fa-solid fa-user" style="font-size: 40px;"></i>
+                        </div>
+                        <div>
+                            <h3>Expert Engineer</h3>
+                            <p>Suspendisse varius etiam tempus nec vitae.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; gap: 20px; align-items: center;" class="expert">
+                        <div
+                            style="background-color: aliceblue; width: 6em; height: 6em; display: flex; align-items: center; justify-content: center; border-radius: 20px;">
+                            <img src="pillar.png" alt="pillar" style="height: 50px;">
+                        </div>
+                        <div>
+                            <h3>Quality Materials</h3>
+                            <p>Suspendisse varius etiam tempus nec vitae.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center; gap: 10px;">
+                    <div style="display: flex; justify-content: center; gap: 20px; align-items: center;" class="expert">
+                        <div
+                            style="background-color: aliceblue; width: 6em; height: 6em; display: flex; align-items: center; justify-content: center; border-radius: 20px;">
+                            <i class="fa-regular fa-house" style="font-size: 40px;"></i>
+                        </div>
+                        <div>
+                            <h3>Required Works</h3>
+                            <p>Suspendisse varius etiam tempus nec vitae.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; gap: 20px; align-items: center;" class="expert">
+                        <div
+                            style="background-color: aliceblue; width: 6em; height: 6em; display: flex; align-items: center; justify-content: center; border-radius: 20px;">
+                            <img src="life-insurance.png" alt="life" style="height: 50px;">
+                        </div>
+                        <div>
+                            <h3>Fully Insured</h3>
+                            <p>Suspendisse varius etiam tempus nec vitae.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="man.png" alt="image" width="90%">
+            </div>
+        </section>
+
+        <br><br><br>
+        <section>
+            <div style="display: flex;justify-content: space-evenly;flex-wrap: wrap;">
+                <img src="some.png" alt="image" style="width: 300px;">
+                <img src="some1.png" alt="image" style="width: 300px;">
+                <img src="somes (1).png" alt="image" style="width: 300px;">
+                <img src="somes (2).png" alt="image" style="width: 300px;">
+            </div>
+        </section>
+        <br><br><br><br>
+        <section style="text-align: center;">
+            <p style="font-weight: bold;color: red;">EXPERT TEAM</p>
+            <h1 style="color: #000;">We Have A Professional<br>
+                Team Member<h1><br>
+                    <div style="display: flex;justify-content: space-evenly;" class="expert">
+                        <div class="container">
+                            <div>
+                                <img src="worker (1).png" alt="image" style="width: 7em;">
+                                <div style="height: 50px;"></div>
+                            </div>
+                            <div class="form-overlay" style="text-align: center;padding: 20px;width: 5em;">
+                                <h6 style="padding: 0%;margin: 10px;">Guy Hawkins</h6>
+                                <p style="font-size: small;padding: 0%;margin: 10px;color: red;">Worker</p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div>
+                                <img src="worker (2).png" alt="image" style="width: 7em;">
+                                <div style="height: 50px;"></div>
+                            </div>
+                            <div class="form-overlay" style="text-align: center;padding: 20px;width: 5em;">
+                                <h6 style="padding: 0%;margin: 10px;">Cody Fisher</h6>
+                                <p style="font-size: small;padding: 0%;margin: 10px;color: red;">Consultant</p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div>
+                                <img src="worker (3).png" alt="image" style="width: 7em;">
+                                <div style="height: 50px;"></div>
+                            </div>
+                            <div class="form-overlay" style="text-align: center;padding: 20px;width: 5em;">
+                                <h6 style="padding: 0%;margin: 10px;">Brooklyn Simmons</h6>
+                                <p style="font-size: small;padding: 0%;margin: 10px;color: red;">Founder</p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section style="text-align: center;background-color: #1b1a1a;padding-top: 40px;padding-bottom: 40px;">
+            <p style="font-weight: bold;color: red;">WORK PROCESS</p>
+            <h1 style="color: aliceblue;">3 Easy Steps to Get<br>
+                Quick Help</h1>
+            <div style="display: flex;justify-content: space-evenly;flex-wrap: wrap;gap: 10px;">
+                <div
+                    style="text-align: center;background-color: #666;display: flex;flex-direction: column;align-items: center;width: 20em;padding: 20px;border-radius: 20px;">
+                    <div
+                        style="height: 100px;width: 100px;border-radius: 100px;background-color: red;display: flex;align-items: center;justify-content: center;">
+                        <i class="fa-solid fa-user" style="color: aliceblue;font-size: xx-large;"></i>
+                    </div>
+                    <h2 style="color: aliceblue;">Get<br> Consultation</h2>
+                </div>
+                <div
+                    style="text-align: center;background-color: #666;display: flex;flex-direction: column;align-items: center;width: 20em;padding: 20px;border-radius: 20px;">
+                    <div
+                        style="height: 100px;width: 100px;border-radius: 100px;background-color: red;display: flex;align-items: center;justify-content: center;">
+                        <i class="fa-regular fa-pen-ruler" style="color: aliceblue;font-size: xx-large;"></i>
+                    </div>
+                    <h2 style="color: aliceblue;">Install New<br> Roof</h2>
+                </div>
+                <div
+                    style="text-align: center;background-color: #666;display: flex;flex-direction: column;align-items: center;width: 20em;padding: 20px;border-radius: 20px;">
+                    <div
+                        style="height: 100px;width: 100px;border-radius: 100px;background-color: red;display: flex;align-items: center;justify-content: center;">
+                        <i class="fa-regular fa-file-signature" style="color: aliceblue;font-size: xx-large;"></i>
+                    </div>
+                    <h2 style="color: aliceblue;">Relax & Enjoy<br> Roofing</h2>
+                </div>
+            </div>
+        </section>
+        <section style="background-color: red;padding: 40px;">
+            <div style="display: flex;justify-content: space-evenly;flex-wrap: wrap;gap: 10px;">
+                <img src="icon (1).png" alt="image">
+                <img src="icon (2).png" alt="image">
+                <img src="icon (1).png" alt="image">
+                <img src="icon (2).png" alt="image">
+            </div>
+        </section>
+        <br><br><br><br>
+        <section style="text-align: center;">
+            <p style="font-weight: bold;color: red;">ARTICLE</p>
+            <h1>Get More Update From<br>
+                RoofTox</h1>
+            <div style="display: flex;justify-content: space-evenly;flex-wrap: wrap;gap: 10px;">
+                <div class="card">
+                    <img src="roof (3).png" alt="Card image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">How to Handle Unexpected Situations on Road</h2>
+                        <p class="card-description">by Admin 2 Comments</p>
+                        <p class="card-description">Tincidunt Maur nemi sit Interdum praesent eget morbi lacinia
+                            volutpat pellentesque Tincidunt aurna suspit.</p>
+                        <hr
+                            style="margin: 20px;  height: 0.1px;border: thin;color: rgb(178, 192, 200);background-color: rgb(178, 192, 200);">
+                        <a href="#" style="text-decoration: none;color: #666;">READ MORE</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="roof (2).png" alt="Card image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">How to Handle Unexpected Situations on Road</h2>
+                        <p class="card-description">by Admin 2 Comments</p>
+                        <p class="card-description">Tincidunt Maur nemi sit Interdum praesent eget morbi lacinia
+                            volutpat pellentesque Tincidunt aurna suspit.</p>
+                        <hr
+                            style="margin: 20px;  height: 0.1px;border: thin;color: rgb(178, 192, 200);background-color: rgb(178, 192, 200);">
+                        <a href="#" style="text-decoration: none;color: #666;">READ MORE</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="roofer.png" alt="Card image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">How to Handle Unexpected Situations on Road</h2>
+                        <p class="card-description">by Admin 2 Comments</p>
+                        <p class="card-description">Tincidunt Maur nemi sit Interdum praesent eget morbi lacinia
+                            volutpat pellentesque Tincidunt aurna suspit.</p>
+                        <hr
+                            style="margin: 20px;  height: 0.1px;border: thin;color: rgb(178, 192, 200);background-color: rgb(178, 192, 200);">
+                        <a href="#" style="text-decoration: none;color: #666;">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br>
+    </main>
+
+    <footer>
+        <br><br>
+        <div style="display: flex;justify-content: center;">
+            <div class="container" style="width: 90%;height: 40vh;box-shadow:0 4px 8px whitesmoke;">
+                <img src="house.png" alt="Background Image" class="background-image" style="height: 40vh;">
+                <div class="overlayed" style="height: 100%;">
+                    <div class="content">
+                        <h1>Our Newsletters</h1>
+                        <form action="#" method="POST">
+                            <input type="text" name="email" placeholder="Your Email" required style="  padding: 10px;
+                            margin: 5px;
+                            border: none;
+                            border-radius: 5px;">
+                            <button type="submit" style="  padding: 10px;
+                            margin: 5px;
+                            border: none;
+                            border-radius: 5px;">SUBSCRIBE NOW</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div style="display: flex;justify-content: space-between;align-items: center;margin: 20px;flex-wrap: wrap;">
+            <div style="display: flex;">
+                <img src="roof.png" alt="" style="width: 100px;height: auto;">
+                <div style="color: black;display: flex;flex-direction: column;justify-content: center;">
+                    <h2 style="padding: 0%;margin: 0%;color: aliceblue;">Roofer</h2>
+                    <p style="padding: 0%;margin: 0%;color: aliceblue;">Roof services</p>
+                </div>
+            </div>
+            <div>
+                <i class="fa-brands fa-facebook-f" style="color: aliceblue;padding: 10px;"></i>
+                <i class="fa-brands fa-twitter" style="color: aliceblue;padding: 10px;"></i>
+                <i class="fa-brands fa-linkedin" style="color: aliceblue;padding: 10px;"></i>
+                <i class="fa-brands fa-instagram" style="color: aliceblue;padding: 10px;"></i>
+                <i class="fa-brands fa-pinterest-p" style="color: aliceblue;padding: 10px;"></i>
+            </div>
+        </div>
+        <br>
+        <hr style="margin: 20px;  height: 0.1px;border: thin;color: rgb(49, 51, 52);background-color: rgb(49, 51, 52);">
+        <br><br><br>
+        <div style="display: flex;justify-content: space-evenly;color: aliceblue;flex-wrap: wrap;">
+            <div>
+                <h2>Get In Touch</h2>
+                <p>Tincidunt neque pretium lectus
+                    donec risus.</p>
+                <p><span style="font-weight: bold;">Add:</span> New Hyde Park, NY 11040</p>
+                <p><span style="font-weight: bold;">Email:</span> example@gmail.com</p>
+                <p><span style="font-weight: bold;">Phone:</span> 333 666 0000</p>
+                <div>
+                    <i class="fa-brands fa-facebook-f" style="color: aliceblue;padding: 10px;"></i>
+                    <i class="fa-brands fa-twitter" style="color: aliceblue;padding: 10px;"></i>
+                    <i class="fa-brands fa-linkedin" style="color: aliceblue;padding: 10px;"></i>
+                </div>
+            </div>
+            <div>
+                <h2>Links</h2>
+                <p>About Us</p>
+                <p>Services</p>
+                <p>Case</p>
+                <p>Roof Repair</p>
+                <p>Contact Us</p>
+            </div>
+            <div>
+                <h2>Working Hours</h2>
+                <p>Tincidunt neque pretium lectus donec risus.
+                </p>
+                <p>Mon - Fri: 9:00AM - 6:00PM</p>
+                <p>Sat - Sun: 8:00AM - 4:00PM</p>
+            </div>
+            <div>
+                <h2>Follow Instagram</h2>
+                <div style="display: flex;flex-direction:column;gap: 10px;">
+                    <div style="display: flex;gap: 10px;">
+                        <img src="roof (2).png" alt="Worker Image" style="height: 100px;width:100px;">
+                        <img src="roof (3).png" alt="Worker Image" style="height: 100px;width:100px;">
+                        <img src="roof (1).png" alt="Worker Image" style="height: 100px;width:100px;">
+                    </div>
+                    <div style="display: flex;gap: 10px;">
+                        <img src="roofer.png" alt="Background Image" class="background-image"
+                            style="height: 100px;width:100px;">
+                        <img src="roofer.png" alt="Background Image" class="background-image"
+                            style="height: 100px;width:100px;">
+                        <img src="roofer.png" alt="Background Image" class="background-image"
+                            style="height: 100px;width:100px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div style="background-color: #000;height: 100px;display: flex;align-items: center;justify-content: center;">
+            <p>Copyright 2024 by Roofer theme All Right Reserved.</p>
+        </div>
+
+    </footer>
+    <script>
+        function showContent(tab) {
+            // Hide all tab content
+            var contents = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+
+            // Remove active class from all tabs
+            var tabs = document.getElementsByClassName('tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+
+            // Show the selected tab content and add active class to the selected tab
+            document.getElementById(tab).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        document.getElementById('hamburger-menu').addEventListener('click', function () {
+            var sideMenu = document.getElementById('side-menu');
+            var overlay = document.getElementById('overlays');
+            sideMenu.style.left = '0';
+            overlay.style.opacity = '1';
+            overlay.style.visibility = 'visible';
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function () {
+            var sideMenu = document.getElementById('side-menu');
+            var overlay = document.getElementById('overlays');
+            sideMenu.style.left = '-100%';
+            overlay.style.opacity = '0';
+            overlay.style.visibility = 'hidden';
+        });
+
+        document.getElementById('overlays').addEventListener('click', function () {
+            var sideMenu = document.getElementById('side-menu');
+            var overlay = document.getElementById('overlays');
+            sideMenu.style.left = '-100%';
+            overlay.style.opacity = '0';
+            overlay.style.visibility = 'hidden';
+        });
+
+    </script>
+</body>
+
+</html>
